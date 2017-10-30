@@ -1,5 +1,6 @@
 
 import controlP5.*;
+import gifAnimation.*;
 
 /* GUI Controller */
 ControlP5 cp5;
