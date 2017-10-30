@@ -1,4 +1,3 @@
 # Floral-Automata
 
-![Alt text](https://i.imgur.com/8UxjoYR.mp4)
-![Alt text](https://i.imgur.com/DPVsTM6.mp4)
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/Sq1E4"><a href="//imgur.com/Sq1E4">Coarsened Floral Automata</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
