@@ -1,4 +1,4 @@
 # Floral-Automata
 
-![Alt text](https://imgur.com/gallery/Sq1E4)
-![Alt text](https://imgur.com/gallery/DPVsTM6)
+![Alt text](https://i.imgur.com/8UxjoYR.mp4)
+![Alt text](https://i.imgur.com/DPVsTM6.mp4)
