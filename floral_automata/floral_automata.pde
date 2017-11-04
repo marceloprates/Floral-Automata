@@ -47,10 +47,11 @@ void setup()
 	init_tape();
 	init_kernel();
 	init_transition();
+	random_rule();
 
 	mini_canvas = createGraphics(500,500);
 	mini_canvas.beginDraw();
-	mini_canvas.background(0);
+	mini_canvas.background(255);
 	mini_canvas.endDraw();
 	init_GUI();
 	hsb = false;
@@ -96,7 +97,7 @@ void draw_flower()
 
 	mini_canvas.beginDraw();
 
-	if(one_pass) mini_canvas.background(0);
+	if(one_pass) mini_canvas.background(255);
 
 	for(int i = (one_pass ? 0 : t); i <= (one_pass ? MAX_IT : t); i++)
 	{
@@ -267,6 +268,12 @@ void init_GUI()
 	.setSize(120,20)
 	;
 
+	cp5.addButton("Screenshot")
+	.setValue(1)
+	.setPosition(0,21*(i++))
+	.setSize(120,20)
+	;
+
 	mode = cp5.addScrollableList("Drawing_Mode")
 	.setPosition(0,21*(i++))
 	.setSize(120,70)
@@ -298,6 +305,7 @@ void Symbols(int x)
 	S = x;
 	code = 0;
 	init_transition();
+	init_tape();
 }
 
 void Iteration_Depth(int x)
@@ -325,4 +333,11 @@ void Hue_Scale()
 		mini_canvas.colorMode(HSB);
 	else
 		mini_canvas.colorMode(RGB);
+}
+
+void Screenshot()
+{
+	cp5.hide();
+	saveFrame(String.format("frames/%d.png",millis()));
+	cp5.show();
 }
