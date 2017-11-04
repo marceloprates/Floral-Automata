@@ -9,3 +9,23 @@ The backbone of this sketch is the insight of drawing the automaton's tape in a 
 ![Screenshot HSB](/screenshot-HSB.png)
 
 Perhaps most interesting is the insight of "coarse-graining" the automaton's dynamics. It works the following way: first we apply a blurring filter (in our case a Gaussian blur) to even out chaotic regions of the automaton's dynamics; then we apply a K-level thresholding (implemented by Processing "posterize" filter) to cluster the image into K classes. Each of these classes can be thought of as a macroscopic view of the automaton's dynamics. For example, in the case of a simple automaton with 2 symbols (represented by 0 and 1), a 3-level thresholding has the effect of clustering the grid into "probably 0", "probably 1" and "random" regions, which correspond to black, white and gray respectively after the posterize filter is applied. Random regions, which have intrincate microscopic structures, are essentially homogeneous "gray" blobs for a macroscopic observer. Thus this method allows one to distinguish between chaotic and orderly behavior in cellular automata, and the resulting images are as beautiful as the correspoding dynamics are complex - remember, the science of complex systems teaches us that complexity is a mixture of order and chaos.
+
+Some random floral automata of varying nº of symbols:
+
+![](https://i.imgur.com/8VTMDXP.png)
+![](https://i.imgur.com/boZkmbv.png)
+![](https://i.imgur.com/jmbJTaU.png)
+![](https://i.imgur.com/kFltRWO.png)
+![](https://i.imgur.com/YvhRxj4.png)
+![](https://i.imgur.com/vPoQMqO.png)
+![](https://i.imgur.com/pCm79uw.png)
+![](https://i.imgur.com/miN9q5u.png)
+![](https://i.imgur.com/kRXVhnH.png)
+![](https://i.imgur.com/dx5g4jt.png)
+![](https://i.imgur.com/LDiRBqU.png)
+![](https://i.imgur.com/NB5rSRo.png)
+![](https://i.imgur.com/vBkgDdQ.png)
+![](https://i.imgur.com/zp1WJt3.png)
+![](https://i.imgur.com/oamMxC4.png)
+![](https://i.imgur.com/2AuPxAs.png)
+![](https://i.imgur.com/hinaHbe.png)
