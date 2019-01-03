@@ -231,7 +231,7 @@ void init_GUI()
 	;
 
 	cp5.addSlider("Symbols")
-	.setValue(2)
+	.setValue(3)
 	.setRange(2,10)
 	.setPosition(0,21*(i++))
 	.setSize(120,20)
